@@ -41,8 +41,8 @@ sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 To verify that your Docker Compose installation was successful, you can use the following command:
-
+```
 docker-compose --version
-
+```
 This command will display the installed version of Docker Compose.
 With these steps completed, you now have Docker and Docker Compose installed on your Ubuntu Server, ready for use in managing and deploying containerized applications.
