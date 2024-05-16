@@ -29,9 +29,9 @@ sudo chown -R 1000:1000 shuffle-database  # IF you get an error using 'chown', a
 
 sudo swapoff -a                           # Disable swap
 ```
-The first command creates a directory called shuffle-database where Opensearch will store its data.
-The second command changes the ownership of the shuffle-database directory to the user with UID 1000 and the group with GID 1000. This step is necessary for Opensearch to function properly. If you encounter an error while running the chown command, you can create a new user called opensearch using sudo useradd opensearch and then change the ownership accordingly.
-The third command disables swap on your system, which is a recommended configuration for Opensearch to work optimally.
+- The first command creates a directory called shuffle-database where Opensearch will store its data.
+- The second command changes the ownership of the shuffle-database directory to the user with UID 1000 and the group with GID 1000. This step is necessary for Opensearch to function properly. If you encounter an error while running the chown command, you can create a new user called opensearch using sudo useradd opensearch and then change the ownership accordingly.
+- The third command disables swap on your system, which is a recommended configuration for Opensearch to work optimally.
 
 ## Step 4: Run Docker Compose
 Once you've completed the previous steps, you can start the Shuffle SOAR application using Docker Compose:
